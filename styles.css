@@ -1,0 +1,106 @@
+body {
+    background-color: #e4e4e7;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    padding-bottom: 3rem;
+}
+
+.content {
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+.content__infoArea {
+    width: 100%;
+    flex-grow: 0;
+}
+
+h1 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 0;
+}
+
+.content__infoArea__points {
+    display: grid;
+    grid-template-columns: 37% 13% 37% 13%;
+}
+
+h3 {
+    border: 1px solid black;
+    padding: 1rem 0.5rem;
+}
+h3.points {
+    text-align: center;
+}
+
+.content__gameArea {
+    flex-grow: 1;
+    display: grid;
+    grid-template-rows: 45% auto 45%;
+    gap: 10px;
+}
+
+.content__gameArea__computerHand, .content__gameArea__humanHand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    height: 100%;
+}
+#computerImage {
+    opacity: 0;
+}
+
+.content__gameArea__humanHand__options {
+    position: absolute;
+    bottom: 0.5rem;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    opacity: 0.8;
+}
+.content__gameArea__humanHand {
+    position: relative;
+}
+.humanHandBoxSelected {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imageOption {
+    cursor: pointer;
+}
+
+.imageHumanOption {
+    width: 100%;
+}
+
+.content__gameArea__buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#btn-reset {
+    border: none;
+    opacity: 0.6;
+    cursor: pointer;
+    transition: all linear 0.2s;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+}
+
+#btn-reset:hover {
+    opacity: 1;
+}

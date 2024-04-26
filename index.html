@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissor</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="content">
+        <div class="content__infoArea">
+            <div class="content__infoArea__title">
+                <h1>Rock, Paper, Scissor</h1>
+            </div>
+            <div class="content__infoArea__points">
+                <h3>Computer</h3>
+                <h3 class="points" id="computerPoints">0</h3>
+                <h3>Human</h3>
+                <h3 class="points" id="humanPoints">0</h3>
+            </div>
+        </div>
+        <div class="content__gameArea">
+            <div class="content__gameArea__computerHand">
+                <img id="computerImage" src="./assets/rock.png" alt="">
+            </div>
+            <button id="btn-reset">Reset</button>
+            <div class="content__gameArea__humanHand">
+                <img id="humanImage" src="" alt="">
+                <div class="content__gameArea__humanHand__options" id="humanOptions">
+                    <button id="humanOption0" class="imageOption"><img class="imageHumanOption" src="./assets/rock.png" alt="Rock"></button>
+                    <button id="humanOption1" class="imageOption"><img class="imageHumanOption" src="./assets/paper.png" alt="Rock"></button>
+                    <button id="humanOption2" class="imageOption"><img class="imageHumanOption" src="./assets/scissor.png" alt="Rock"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
